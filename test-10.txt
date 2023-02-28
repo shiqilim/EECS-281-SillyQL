@@ -1,0 +1,22 @@
+CREATE 281class 3 int double double studentno midterm final
+GENERATE FOR 281class hash INDEX ON midterm
+INSERT INTO 281class 10 ROWS
+1 73.25 93.99
+2 67.95 98.75
+3 80.81 77.65
+4 93.00 90.73
+5 65.99 87.56
+6 33.70 30.66
+7 92.59 93.00
+8 32.00 54.70
+9 94.56 92.62
+10 80.33 79.00
+PRINT FROM 281class 1 studentno WHERE midterm > 50
+DELETE FROM 281class WHERE midterm < 50
+PRINT FROM 281class 1 studentno WHERE final > 60
+INSERT INTO 281class 3 ROWS
+11 89.33 89.04
+12 78.02 45.48
+13 23.54 41.56
+PRINT FROM 281class 1 studentno WHERE final < 30
+QUIT

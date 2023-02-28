@@ -1,0 +1,29 @@
+#
+#
+#
+CREATE LOL 3 string double bool L O Y/N
+INSERT INTO LOL 10 ROWS
+a 15.64 true
+b 43.12 false
+c 54.46 true
+d 45.12 false
+a 54.45 false
+a 78.52 true
+b 45.12 true
+b 45.65 false
+c 68.73 true
+c 98.72 false
+GENERATE FOR LOL hash INDEX ON O
+PRINT FROM LOL 2 L O ALL
+PRINT FROM LOL 2 L O WHERE O > 50
+DELETE FROM LOL WHERE O > 50
+INSERT INTO LOL 4 ROWS
+a 15.64 true
+b 43.12 false
+c 54.46 true
+d 45.12 false
+DELETE FROM LOL WHERE O > 50
+DELETE FROM LOL WHERE O = 50
+DELETE FROM LOL WHERE O < 50
+PRINT FROM LOL 2 L O ALL
+QUIT

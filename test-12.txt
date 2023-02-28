@@ -1,0 +1,25 @@
+#I
+#love
+#comment
+CREATE testtable 3 int double bool no val Y/N
+INSERT INTO testtable 8 ROWS
+1 2 true
+2 4 false
+3 2 true
+4 5 true
+5 9 false
+6 8 true
+7 3 false
+8 0 true
+DELETE FROM testtable WHERE val > 7
+PRINT FROM eecs281 3 no val Y/N ALL
+GENERATE FOR testtable bst INDEX ON no
+PRINT FROM testtable 3 no val Y/N ALL
+PRINT FROM testtable 2 no val WHERE Y/N = true
+PRINT FROM testtable 2 val no WHERE no > 5
+PRINT FROM testtable 2 Y/N no WHERE val < 6
+PRINT FROM testtable 2 Y/N val WHERE no < 7
+DELETE FROM testtable WHERE Y/N = false
+DELETE FROM testtable WHERE val < 5
+REMOVE testtable
+QUIT

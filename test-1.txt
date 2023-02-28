@@ -1,0 +1,15 @@
+# i am comment
+CREATE 280class 3 int string double a b c
+GENERATE FOR 280class hash INDEX ON a
+INSERT INTO 280class 3 ROWS
+1 A 1.5
+2 B 9.8
+1 C 6.0
+PRINT FROM 280class 1 b WHERE a = 2
+DELETE FROM 280class WHERE a = 2
+PRINT FROM 280class 1 b WHERE a = 2
+INSERT INTO 280class 2 ROWS
+2 D 3.9
+1 E 5.4
+PRINT FROM 280class 1 b WHERE a = 2
+QUIT

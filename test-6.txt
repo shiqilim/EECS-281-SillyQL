@@ -1,0 +1,16 @@
+CREATE 203class 3 int string bool year name retake
+CREATE 281class 3 int string bool year name retake
+GENERATE FOR 203class bst INDEX ON year
+GENERATE FOR 281class hash INDEX ON name
+INSERT INTO 203class 3 ROWS
+2 Joyce false
+1 Tarun false
+1 Jarod false
+INSERT INTO 281class 3 ROWS
+3 Amrush true
+2 Rapheal false
+2 Joyce false
+PRINT FROM 203class 1 name WHERE year > 1
+PRINT FROM 281class 1 name WHERE retake = true
+JOIN 203class AND 281class WHERE year = year AND PRINT 2 name 1 retake 2
+QUIT

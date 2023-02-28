@@ -1,0 +1,20 @@
+CREATE 280class 3 int int int ione itwo ithree
+GENERATE FOR 280class bst INDEX ON a
+INSERT INTO 280class 7 ROWS
+1 2 3
+4 5 6
+7 8 9
+10 11 5
+13 14 15
+16 5 5
+19 20 21
+GENERATE FOR 280class bst INDEX ON ithree
+PRINT FROM 280class 3 ione itwo ithree WHERE ithree < 20
+DELETE FROM 280class WHERE ithree = 5
+PRINT FROM 280class 3 ione itwo ithree WHERE ithree < 20
+INSERT INTO 280class 2 ROWS
+22 23 24
+100 0 5
+DELETE FROM 280class WHERE ithree < 10
+PRINT FROM 280class 3 ione itwo ithree ALL
+QUIT
